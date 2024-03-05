@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exercise 1</title>
+    <style>
+        /* Answer is here. The first child of div should have some specific css rules while other children have some other css rules. */
+        div p{
+            background-color: blue;
+            color: white;
+        }
+        div p:first-child{
+            /* when p is the first child inside div tag then these rules should apply */
+            background-color: yellow;
+            color: red;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <!-- Question 1 -->
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic id excepturi dolor adipisci, maiores accusamus quibusdam nesciunt laboriosam ut, dignissimos nisi natus ipsa.</p>
+        <p>I am a para</p>
+        <p>I am another para</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic id excepturi dolor adipisci, maiores accusamus quibusdam nesciunt laboriosam ut, dignissimos nisi natus ipsa.</p>
+        <p>I am a para</p>
+        <p>I am another para</p>
+    </div>
+    
+</body>
+</html>
