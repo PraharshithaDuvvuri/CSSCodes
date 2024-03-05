@@ -1,0 +1,19 @@
+p{
+    color: red;
+}
+/* ID selector */
+#hello{
+    color: aqua;
+}
+/* Class selector */
+.bgBlue{
+    color: blue;
+}
+/* Group selector */
+footer, span{
+    background-color: pink;
+}
+/* Element selector */
+p{
+    border: 2px solid black;
+}
