@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Specificity and Cascade</title>
+    <style>
+        /* specificity */
+        h1{
+            color: black;
+        }
+        .yellow{
+            color: aqua;
+        }
+        .cpurple{
+            color: blue;
+        }
+        .cyellow{
+            /* class selector has higher precedance acc to order of specificity. So this will be applied. */
+            color: red;
+        }
+        /* position */
+        .yellow{
+            background: red;
+        }
+        .cpurple{
+            background: blue;
+        }
+        .cyellow{
+            /* this will apply as it is the bottom one */
+            background-color: goldenrod;
+        }
+        /* importance */
+        .yellow{
+            text-decoration: underline;
+            text-decoration-style: solid;
+            text-decoration-color: blueviolet;
+        }
+        .cpurple{
+            text-decoration: underline;
+            text-decoration-style: dashed;
+            text-decoration-color: brown;
+        }
+        .cyellow{
+            text-decoration: underline !important;
+            text-decoration-style: double !important;
+            text-decoration-color: blue !important;
+        }
+        /* attribute selector */
+        [data-x=1]{
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cpurple cyellow" style="color: maroon;" data-x="1">This is CSS Specificity and Cascade.</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            /* inline element : width,height,top margin, top padding, top border have no effect. No linebreak before and after. */
+            color: black;
+            background-color: lawngreen;
+            border: 3px solid blue;
+            padding: 20px;
+            display: inline;
+            margin-bottom: 10px;
+        }
+        .box1{
+            /* by default div is a block-level element. */
+            color: black;
+            background-color: lawngreen;
+            border: 3px solid blue;
+            margin: 20px;
+            padding: 20px;
+            height: 30px;
+            width: 60vw;
+        }
+        .box2{
+            /* inline-block element. */
+            color: black;
+            background-color: lawngreen;
+            height: 30px;
+            width: 75px;
+            border: 3px solid blue;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+        }
+        .box3{
+            /* how to make inline element to inline-block element. Span is by default an inline element. */
+            color: black;
+            background-color: lawngreen;
+            border: 3px solid blue;
+            display: inline-block;
+            height: 30px;
+            width: 75px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .box4{
+            color: black;
+            background-color: lawngreen;
+            border: 3px solid blue;
+            display: block;
+            height: 30px;
+            width: 75px;
+            padding: 20px;
+            margin: 20px;
+            /* display: none; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box 1.
+    </div>
+    <div class="box2">
+        I am box 2.
+    </div>
+    <div class="box1">
+        I am box 3.
+    </div>
+    <span class="box3">
+        I am box 4.
+    </span>
+    <div class="box4">
+        I am box 5.
+    </div>
+
+</body>
+</html>
