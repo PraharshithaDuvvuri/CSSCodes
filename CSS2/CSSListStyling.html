@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS List Styling</title>
+    <style>
+      nav ul li a {
+        /* underline is overridden */
+        text-decoration: none;
+      }
+      nav ul li {
+        /* modify the marker. */
+        background-color: blueviolet;
+        /* marker can be an emoji as well. */
+        list-style: "🥳" outside;
+        /* marker is an image here. */
+        /* list-style: inside url("download.png"); */
+        /* use this if you want the default marker */
+        /* list-style: disc inside; */
+        /* marker is placed inside the list item */
+        /* list-style-position: inside; */
+        /* draws a border for every list item */
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="https://www.google.co.in/">Home</a></li>
+        <li><a href="https://www.google.co.in/">About</a></li>
+        <li><a href="https://www.google.co.in/">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+/* universal selector */
+*{
+    border: 1px;
+}
+/* element selectors */
+p{
+    color: white;
+    background-color: greenyellow;
+}
+/* id selectors */
+#para2 p{
+    color: darkolivegreen;
+    background-color: violet;
+}
+/* class selectors */
+.para1 p{
+    color: brown;
+    background-color: lightsalmon;
+}
+h1,h2{
+    color: aquamarine;
+    background-color: slateblue;
+}

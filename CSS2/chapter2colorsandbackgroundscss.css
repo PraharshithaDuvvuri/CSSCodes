@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.green{
+    background: #007cff;
+    color: black;
+}
+.red{
+    background: #00ff9f;
+    color: black;
+}
+body{
+    background-image: url('image.webp');
+    background-repeat: repeat-x;
+}

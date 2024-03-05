@@ -1,0 +1,9 @@
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.lorem{
+    border: 2px solid red;
+    width: 45px;
+    text-overflow: clip;
+    overflow: hidden;
+}
